@@ -1,0 +1,20 @@
+.sub_themes,
+.theme_title
+{
+    font-family: 'BBRollerMonoProST-Medium';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 4.32px;
+}
+
+.theme_description
+{
+    font-family: 'GTEestiDisplayTrial-Light';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}

@@ -1,0 +1,107 @@
+.wcce_event_date
+{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 2.16px;
+}
+
+.language_items a
+{
+    color: var(--Black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 2.16px;
+}
+
+.page_title
+{
+    font-family: 'BBRollerMonoProST-SemiLight';
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 95px; /* 98.958% */
+    letter-spacing: 11.52px;
+}
+
+.page_description
+{
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.wcce_event_number span:first-child
+{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background-color: var(--Red);
+    border-radius: 50%;
+
+    font-family: 'BBRollerMonoProST-SemiBold';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 59px;
+}
+
+.wcce_event_number span:nth-child(2)
+{
+    font-family: 'BBRollerMonoProST-SemiBold';
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.wcce_event_year_location
+{
+    font-family: 'BBRollerMonoProST-Medium';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 4.32px;
+}
+
+.wcce_event_theme p:first-child
+{
+    font-size: 18px;
+    line-height: 34px;
+    letter-spacing: 2.16px;
+    margin-bottom: 0;
+}
+
+.wcce_event_theme p:nth-child(2)
+{
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.wcce_event_participants
+{
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.wcce_event_participants .red_circle
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--Red);
+    margin-right: 10px;
+}
