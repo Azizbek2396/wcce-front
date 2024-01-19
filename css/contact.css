@@ -1,0 +1,32 @@
+.contact_info,
+.address_info
+{
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.follow_us
+{
+    font-family: "BBRollerMonoProST-Medium";
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.contact-form input
+{
+    background: var(--Blue-light);
+    border-radius: 30px;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-form label
+{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2.16px;
+}

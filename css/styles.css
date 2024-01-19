@@ -1,6 +1,8 @@
 @import url(variables.css);
 @import url(about.css);
 @import url(wcce2024.css);
+@import url(news.css);
+@import url(contact.css);
 
 *, *::after, *::before {
       box-sizing: border-box;
@@ -138,6 +140,7 @@ body {
 .right-aside:hover
 {
       width: 35%;
+      overflow-y: none;
 }
 
 .right-aside:hover .nav-link
@@ -199,7 +202,7 @@ body {
       margin-top: 150px;
       display: none;
 }
-.right-aside .social_media_links a {
+.social_media_links a {
       display: inline-block;
       background: #000;
       border-radius: 50%;
@@ -212,11 +215,11 @@ body {
       color: antiquewhite;
 }
 
-.right-aside .social_media_links a svg {
+.social_media_links a svg {
       vertical-align: bottom;
 }
 
-.right-aside .email a{
+ .email a{
       color: var(--Black);
       font-size: 26px;
       line-height: 34px;
