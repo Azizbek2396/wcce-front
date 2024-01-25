@@ -15,7 +15,8 @@
     letter-spacing: 3.12px;
 }
 
-.contact-form input
+.contact-form input,
+.contact-form textarea
 {
     background: var(--Blue-light);
     border-radius: 30px;

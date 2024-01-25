@@ -1,3 +1,6 @@
-// gsap.registerPlugin(ScrollToPlugin)
-// //scroll to 400 pixels down from the top
-// gsap.to(window, { duration: 2, scrollTo: 400 });
+$( document ).ready(function() {
+    setTimeout(function() {
+        $('.animation_container').addClass("d-none");
+        console.log("10sek")
+      }, 10500);
+});
