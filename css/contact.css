@@ -31,3 +31,25 @@
     line-height: 24px;
     letter-spacing: 2.16px;
 }
+
+input[type="submit"]
+{
+    padding: 10px 25px;
+    font-family: "BBRollerMonoProST-Medium";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 3px solid var(--Black);
+    border-radius: 47px;
+    transition: all 0.5s ease;
+}
+
+input[type="submit"]:hover
+{
+    background-color: var(--Red);
+    border-color: var(--Red);
+}

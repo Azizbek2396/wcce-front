@@ -3,6 +3,7 @@
 @import url(wcce2024.css);
 @import url(news.css);
 @import url(contact.css);
+@import url(organiser.css);
 
 *, *::after, *::before {
       box-sizing: border-box;
