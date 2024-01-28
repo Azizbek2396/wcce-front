@@ -258,6 +258,13 @@ body {
 }
 /* Animation PopUp */
 
+/* CUSTOM WIDTHS */
+.w-100, .w-xs-100 { width: 100%!important; }
+.w-75, .w-xs-75 { width: 75%!important; }
+.w-50, .w-xs-50 { width: 50%!important; }
+
+/* CUSTOM WIDTHS */
+
 @media (min-width: 1200px){
       .container {
             max-width: 100%;
@@ -292,17 +299,99 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+      .main{
+            width: 90%;
+      }
 
+      .right-aside
+      {
+            width: 10%;
+      }
 }
 
 @media screen and (max-width: 768px) {
+      
+      .page_title {
+            font-size: 41px;
+            line-height: 44px;
+            letter-spacing: 4.92px;
+      }
+
+      .inner_header p.wcce_event_date
+      {
+            font-size: 10px;
+            line-height: 12px;
+            letter-spacing: 1.2px;
+      }
+
+      .right-aside .nav_link_circle {
+            width: 28px;
+            height: 28px;
+      }
+      .right-aside .nav-link {
+            padding: 0.5rem 0.5rem;
+      }
+
+      .organiser .organiser_name {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+      }
+
+      .organiser .organiser_desc
+      {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+      }
 
 }
 
 @media screen and (max-width: 576px) {
+      .main{
+            width: 85%;
+      }
 
+      .right-aside
+      {
+            width: 15%;
+      }
+
+      .page_title {
+            font-size: 35px;
+      }
+
+      .organiser .organiser_logo
+      {
+            width: 200px;
+      }
 }
 
 @media screen and (max-width: 320px) {
-
+      .page_title {
+            font-size: 25px;
+      }
 }
+
+/* BREAKPOINTS */
+
+/* SM breakpoint */
+@media (min-width: 576px) {
+      .w-sm-100 { width: 100%!important; }
+      .w-sm-75 { width: 75%!important; }
+      .w-sm-50 { width: 50%!important; }
+  }
+  
+  /* MD breakpoint*/
+  @media (min-width: 768px) {
+      .w-md-100 { width: 100%!important; }
+      .w-md-75 { width: 75%!important; }
+      .w-md-50 { width: 50%!important; }
+  }
+  
+  /* LG breakpoint */
+  @media (min-width: 992px) {
+      .w-lg-100 { width: 100%!important; }
+      .w-lg-75 { width: 75%!important; }
+      .w-lg-50 { width: 50%!important; }
+  }

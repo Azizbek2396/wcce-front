@@ -1,4 +1,80 @@
-.organiser_logo
+.organiser .organiser_logo
 {
     width: 250px;
+    margin-bottom: 35px;
+}
+
+.organiser .organiser_name
+{
+    font-family: "BBRollerMonoProST-Medium";
+    font-size: 26px;
+    line-height: 34px; /* 130.769% */
+    letter-spacing: 3.12px;
+}
+
+.organiser .organiser_body
+{
+    transition: all 0.5s ease;
+}
+
+.organiser .organiser_desc
+{
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+}
+
+.organiser .organiser_site
+{
+    color: var(--Red);
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+    text-decoration-line: underline;
+}
+
+.organiser .org_body_toggle
+{
+    position: relative;
+    display: inline-block;
+    background-color: var(--Yellow);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+} 
+
+.organiser .org_body_toggle::after
+{
+    position: absolute;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4px;
+    letter-spacing: 4.8px;
+    top: 10px;
+    left: 6px;
+}
+
+.organiser .toggle_wrap.toggle-minus .org_body_toggle::after
+{
+    content: "-";
+} 
+
+.organiser .toggle_wrap.toggle-plus .org_body_toggle::after
+{
+    content: "+";
+} 
+
+.organiser .opened
+{
+    display: block;
+}
+
+.organiser .closed
+{
+    display: none;
 }
