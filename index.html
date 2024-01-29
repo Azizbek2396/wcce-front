@@ -13,34 +13,46 @@
 
 <body>
 
-  <section class="animation_container">
+  <section class="animation_container d-none">
     <img class="w-100" src="/images/animations/wcce_home_animation_white.gif" alt="Animation">
   </section>
   <section class="wrapper-section">
     <main class="main">
-      <div class="container main-container m-0 p-4">
-        <div class="row">
-          <div class="col-8">
-            <h1 class="conference_name">
-                  IV World
-              <br> Conference
-              <br> on creative
-              <br> economy
-            </h1>
+      <div class="vh-100 vh-md-none">
+        <div class="container main-container m-0 p-4 vh-md-100 vh-80">
+          <div class="row">
+            <div class="col-md-8 col-12">
+              <h1 class="conference_name">
+                    IV World
+                <br> Conference
+                <br> on creative
+                <br> economy
+              </h1>
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+              <p class="conference_detail">Tashkent, Uzbekistan
+                October 2nd – 4th, 2024
+                “Inclusively Creative: A Shifted Reality”</p>
+            </div>
           </div>
-          <div class="col-4">
-            <p class="conference_detail">Tashkent, Uzbekistan
-              October 2nd – 4th, 2024
-              “Inclusively Creative: A Shifted Reality”</p>
+          <div class="logo_wrapper d-none d-md-block">
+            <img src="/images/logo.svg" alt="Logo">
           </div>
         </div>
-        <div class="logo_wrapper">
-          <img src="/images/logo.svg" alt="Logo">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-md-none d-block">
+              <p class="conference_detail">Tashkent, Uzbekistan October 2nd – 4th, 2024 “Inclusively Creative: A Shifted Reality”</p>
+            </div>
+            <div class="col-12 d-md-none d-block">
+                <img class="w-75" src="/images/logo.svg" alt="Logo">
+            </div>
+          </div>
         </div>
       </div>
 
     </main>
-    <aside class="right-aside py-3">
+    <aside class="right-aside hoverable py-md-3 px-md-0">
       <nav class="nav flex-column">
         <a class="nav-link" href="about.html">
           <span class="nav_link_circle"></span>
@@ -66,8 +78,13 @@
           <span class="nav_link_circle"></span>
           <span class="nav_link_name">Contact us</span>
         </a>
+        <div class="mobile_language_items mt-5 d-block d-md-none">
+          <a href="#" class="d-block text-center">EN</a>
+          <a href="#" class="d-block text-center">UZ</a>
+          <a href="#" class="d-block text-center">RU</a>
+        </div>
       </nav>
-      <div class="social_links pl-5">
+      <div class="social_links pl-md-5 pl-2">
         <div class="social_media_links mb-3">
           <a href="#"><i class="fa-brands fa-instagram"></i></a>
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>

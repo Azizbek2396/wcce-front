@@ -16,3 +16,18 @@ $(".org_body_toggle").on("click", function(){
   parent.siblings(".organiser_body").toggleClass('closed')
 
 });
+
+if($( document ).width() < 768)
+{
+  $(".right-aside").removeClass("hoverable");
+  $(".right-aside").on("click", function(){
+    $(this).addClass("menu_opened");
+  });
+
+  $(".right-aside .nav-link").on("click", function(){
+    $(this).addClass("active");
+    $(".right-aside").removeClass("menu_opened");
+  });
+}
+
+// console.log($( document ).width());
