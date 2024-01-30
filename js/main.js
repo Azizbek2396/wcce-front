@@ -21,7 +21,7 @@ if($( document ).width() < 768)
 {
   $(".right-aside").removeClass("hoverable");
   $(".right-aside").on("click", function(){
-    $(this).addClass("menu_opened");
+    $(this).toggleClass("menu_opened");
   });
 
   $(".right-aside .nav-link").on("click", function(){

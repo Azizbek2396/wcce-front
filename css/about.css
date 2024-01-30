@@ -18,6 +18,12 @@
     letter-spacing: 2.16px;
 }
 
+.language_items a.active,
+.mobile_language_items a.active
+{
+    text-decoration: underline;
+}
+
 .page_title
 {
     font-family: 'BBRollerMonoProST-SemiLight';
