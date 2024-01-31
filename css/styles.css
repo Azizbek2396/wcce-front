@@ -4,6 +4,8 @@
 @import url(news.css);
 @import url(contact.css);
 @import url(organiser.css);
+@import url(agenda.css);
+
 
 *, *::after, *::before {
       box-sizing: border-box;
@@ -346,15 +348,62 @@ body {
       {
             width: 10%;
       }
+      .agenda_right_arrow
+      {
+            display: none;
+      }
+
 }
 
 @media screen and (max-width: 768px) {
-
       .page_title {
             font-size: 41px;
             line-height: 44px;
             letter-spacing: 4.92px;
       }
+
+      .page_description {
+            font-size: 16px;
+            line-height: 20px; /* 125% */
+            letter-spacing: 1.92px;
+      }
+
+      .wcce_event_number span:first-child {
+            width: 50px;
+            height: 50px;
+            font-size: 28px;
+            line-height: 55px;
+        }
+
+      .wcce_event_year_location {
+            font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 3.12px;
+      }
+
+      .wcce_event_theme p:first-child {
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 1.68px;
+      }
+
+      .wcce_event_theme p:nth-child(2) {
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 2.16px;
+      }
+
+      .wcce_event_participants {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+      }
+
+      .wcce_event_participants .red_circle {
+            width: 15px;
+            height: 15px;
+            margin-right: 8px;
+        }
 
       .inner_header p.wcce_event_date
       {
@@ -421,8 +470,64 @@ body {
 
       .main .conference_detail {
             font-size: 17px;
-            line-height: 20px; /* 117.647% */
+            line-height: 20px;
             letter-spacing: 2.04px;
+        }
+
+      .sub_themes,
+      .theme_title h4 {
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: 3.12px;
+      }
+
+      .theme_description {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+      }
+
+      .agenda
+      {
+            height: 100%;
+            background-image: url("/images/vertical_line.svg"), url("/images/vertical_line.svg");
+            background-position: right center, left center;
+            background-repeat: no-repeat;
+            background-size: 7px;
+      }
+
+      .agenda_status {
+            font-size: 22px;
+            line-height: 40px;
+            letter-spacing: 2.64px;
+        }
+
+      .agenda_list ul li {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+      }
+
+      .contact_info, .address_info {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+        }
+
+        .follow_us {
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 1.92px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 0.5rem 0.5rem;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            padding: 8px 24px;
+            line-height: 24px;
         }
 
 }
@@ -445,6 +550,11 @@ body {
       {
             width: 200px;
       }
+      .agenda_status {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 1.64px;
+        }
 }
 
 @media screen and (max-width: 320px) {
@@ -462,6 +572,15 @@ body {
             font-size: 12px;
             line-height: 15px; /* 117.647% */
             letter-spacing: 1.04px;
+        }
+
+      .sub_themes, .theme_title h4 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+      .agenda_status {
+            font-size: 13px;
+            line-height: 18px;
         }
 }
 

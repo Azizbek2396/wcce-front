@@ -104,9 +104,14 @@
     letter-spacing: 3.12px;
 }
 
-.wcce_event_participants .red_circle
+.wcce_event_participants span
 {
     display: inline-block;
+}
+
+.wcce_event_participants .red_circle
+{
+    /* display: inline-block; */
     width: 20px;
     height: 20px;
     border-radius: 50%;
