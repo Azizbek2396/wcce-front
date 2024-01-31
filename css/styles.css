@@ -131,6 +131,7 @@ body {
 
 .right-aside {
       width: 5%;
+      min-height: 100vh;
       box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.15);
       transition: all 0.5s ease;
       display: flex;
