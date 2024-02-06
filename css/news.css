@@ -26,7 +26,7 @@
     color: #7d7d7d;
 }
 
-.new .new-body .new-tags .tag_color
+.new-tags .tag_color
 {
     display: inline-block;
     width: 15px;
@@ -34,7 +34,7 @@
     border-radius: 50%;
 }
 
-.new .new-body .new-tags .tag_name
+.new-tags .tag_name
 {
     color: var(--Black2);
     font-family: "GTEestiDisplayTrial-Light";
@@ -42,4 +42,33 @@
     line-height: 25px;
     letter-spacing: 2.16px;
     text-decoration-line: underline;
+}
+
+.new_title {
+    font-family: 'BBRollerMonoProST-Medium';
+    font-size: 53px;
+    line-height: 60px;
+    letter-spacing: 2.52px;
+    text-align: center;
+}
+
+.new_date p
+{
+    font-size: 18px;
+}
+
+.time_to_read p{
+    font-family: 'BBRollerMonoProST-Medium';
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.52px;
+}
+
+.new_content
+{
+    font-family: "GTEestiDisplayTrial-Light";
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.12px;
+    text-align: justify;
 }

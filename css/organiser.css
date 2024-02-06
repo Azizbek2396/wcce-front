@@ -45,7 +45,7 @@
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s ease;
-} 
+}
 
 .organiser .org_body_toggle::after
 {
@@ -55,19 +55,19 @@
     font-weight: 400;
     line-height: 4px;
     letter-spacing: 4.8px;
-    top: 10px;
+    top: 18px;
     left: 6px;
 }
 
 .organiser .toggle_wrap.toggle-minus .org_body_toggle::after
 {
     content: "-";
-} 
+}
 
 .organiser .toggle_wrap.toggle-plus .org_body_toggle::after
 {
     content: "+";
-} 
+}
 
 .organiser .opened
 {
