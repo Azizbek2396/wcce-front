@@ -526,7 +526,9 @@ body {
             letter-spacing: 1.92px;
         }
 
-        .follow_us {
+        .follow_us,
+        .newsletter_message
+         {
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 1.92px;

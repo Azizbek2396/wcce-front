@@ -7,7 +7,8 @@
     letter-spacing: 3.12px;
 }
 
-.follow_us
+.follow_us,
+.newsletter_message
 {
     font-family: "BBRollerMonoProST-Medium";
     font-size: 26px;
