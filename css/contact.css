@@ -54,3 +54,11 @@ input[type="submit"]:hover
     background-color: var(--Red);
     border-color: var(--Red);
 }
+
+.contact_success_text p
+{
+    font-family: "BBRollerMonoProST-Medium";
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 4.12px;
+}
