@@ -94,10 +94,10 @@ body {
 .main .main-container{
       position: relative;
       /* height: 100vh; */
-      background-image: url("/images/home_page_background.svg");
+      background-image: url("/images/home_page_background_16x9.svg");
       background-position: center bottom;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100%;
 }
 
 .main .logo_wrapper
@@ -366,6 +366,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+      .main .main-container{
+            background-image: url("/images/home_page_background_mobile.svg");
+      }
       .page_title {
             font-size: 41px;
             line-height: 44px;

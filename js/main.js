@@ -1,8 +1,8 @@
 $( document ).ready(function() {
     setTimeout(function() {
         $('.animation_container').addClass("d-none");
-        $('.main-container').removeClass("d-none");
-        $('.right-aside').removeClass("d-none");
+        // $('.main-container').removeClass("d-none");
+        // $('.right-aside').removeClass("d-none");
         // console.log("10sek")
       }, 11000);
 
