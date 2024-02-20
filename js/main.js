@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var ratio = $(window).width() / $(window).height();
-  console.log(ratio);
+  // console.log(ratio);
   if((ratio > 0.4) && (ratio < 1))
   {
     $('.animation_container img').attr('src', '/images/animations/compressed/WCCE_Teaser_9x18.gif')
