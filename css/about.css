@@ -21,7 +21,7 @@
 .language_items a.active,
 .mobile_language_items a.active
 {
-    text-decoration: underline;
+    font-family: 'BBRollerMonoProST-SemiBold';
 }
 
 .page_title
