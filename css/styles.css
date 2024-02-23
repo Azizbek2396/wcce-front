@@ -86,10 +86,15 @@ body {
       box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.main {
+.main{
       width: 95%;
-      transition: all 0.5s ease;
       min-height: 100vh;
+      transition: all 0.5s ease-in-out;
+      transform: translateY(100%);
+}
+
+.main.animate{
+      transform: translateY(0);
 }
 
 
@@ -172,7 +177,7 @@ body {
 .right-aside.hoverable:hover
 {
       width: 35%;
-      padding-left: 10px;
+      margin-left: 10px;
       overflow-y: none;
 }
 
@@ -283,29 +288,7 @@ body {
       letter-spacing: 3.12px;
       text-decoration-line: underline;
 }
-.right-aside .organisers
-{
-      display: flex;
-}
 
-.right-aside .organisers a
-{
-      display: inline-block;
-      padding-right: 10px;
-      width: 20%;
-      margin-top: auto;
-      margin-bottom: auto;
-}
-
-.right-aside .organisers a:last-child
-{
-      padding-right: 0;
-}
-
-.right-aside .organisers a img
-{
-      width: 100%;
-}
 
 /* Animation PopUp */
 
@@ -525,6 +508,13 @@ body {
             line-height: 24px;
             letter-spacing: 2.12px;
             text-decoration-line: none;
+      }
+
+      .organisers_wrapper h3
+      {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 2.12px;
       }
 
       .organiser .organiser_name {

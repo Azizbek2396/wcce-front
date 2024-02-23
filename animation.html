@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Animation</title>
+  <style>
+    body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.content {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(100%);
+}
+
+.animate {
+  transform: translateY(0);
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" id="animateButton">Animate Page</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eum enim, nisi maxime voluptatibus ex dicta, veniam optio error nam nulla ipsam voluptates itaque, commodi impedit aliquam beatae iusto. Sequi cum ducimus culpa laudantium numquam fuga corrupti doloribus sapiente provident ab enim alias nostrum, repellendus porro nesciunt laboriosam maxime. Deleniti reprehenderit alias adipisci odio molestias, minus voluptatum ut nesciunt, aperiam inventore consequatur iure odit. Similique fugiat exercitationem labore nisi quaerat modi, molestiae eveniet eos voluptas magni nesciunt dolor aliquam laborum repellat molestias iusto. Deleniti pariatur corporis modi quos tenetur ratione libero sequi iusto velit aspernatur a dolorem minima, quidem cupiditate impedit. Dolor veritatis perferendis voluptas aperiam deleniti! Molestiae veniam autem blanditiis eaque, nihil optio quas voluptas reiciendis tempora sapiente deleniti? Illo, aliquam? Dolorem voluptate magnam incidunt dignissimos porro eveniet aliquam facilis, facere neque minus aliquid dolores dicta velit repudiandae dolorum nesciunt sed asperiores corporis laborum consectetur. Error ut veniam cum maxime deleniti! Mollitia eius beatae repellat excepturi possimus tenetur eaque natus quasi exercitationem enim voluptates nisi ipsum quae, ratione consectetur ipsa. Reprehenderit autem perspiciatis dicta temporibus eveniet deleniti rem odit soluta recusandae, consectetur harum consequuntur tempora officiis labore corporis reiciendis nisi maiores tempore obcaecati ipsam! Architecto enim placeat commodi ad, dolore, nostrum mollitia facere aperiam ipsam voluptas, molestiae blanditiis a necessitatibus laboriosam ducimus. Doloremque quae quas beatae sapiente officiis ipsa in esse error quia qui! Cumque voluptates nesciunt illo at eos. Dolores veritatis optio consectetur doloremque ullam sed facilis ex, aperiam error laborum quasi eos rerum, doloribus est! Pariatur, illo soluta, fugit commodi dolore quasi perspiciatis quam temporibus facilis quos sit cupiditate ipsa tempore nostrum nesciunt! Cumque molestias ad veritatis obcaecati assumenda placeat expedita officiis repellat enim! Perferendis iure sit eligendi? Similique in fuga amet dolores temporibus? Veritatis doloribus nostrum est, culpa possimus itaque cupiditate, minima pariatur soluta dolor aliquid ullam! Molestias officia quos non voluptatem, ipsum sunt totam aspernatur eaque veritatis dolores dolore necessitatibus laborum impedit id ipsam assumenda esse illum dicta inventore iusto nulla dolor nisi qui magni. Nostrum maxime laudantium explicabo odio facilis ullam reiciendis nisi ratione! Necessitatibus dolor fuga rerum perferendis quidem eos alias laudantium, tempora harum ab molestiae dolorem accusantium eius similique quasi obcaecati! Minima eveniet natus facilis quis blanditiis quos tenetur, sint, rem perspiciatis, ex ad distinctio doloremque asperiores! Nostrum praesentium porro et sit placeat nemo accusantium, eaque, sapiente consectetur tempore expedita possimus recusandae molestias in. Optio, omnis corporis illo laborum error quia aspernatur aliquid distinctio esse, nobis repudiandae ad sit blanditiis quaerat officia voluptate eveniet, dolorem voluptatem modi odio. Nostrum quasi, qui voluptas blanditiis harum tenetur dolore dignissimos voluptates iusto similique ad possimus sunt impedit obcaecati mollitia quas officia deserunt earum commodi provident sapiente? Eum labore soluta qui sint harum ullam odit ab, ad repudiandae? Pariatur nulla perferendis enim! Quasi necessitatibus modi debitis quod non saepe consequuntur exercitationem odit neque a repellendus sint tempora corrupti facere est quidem nobis voluptatem, quae enim. Non, unde perferendis! Reprehenderit laboriosam quaerat cumque, dolore molestiae nobis magni quia nostrum. Vitae a architecto ab dicta, atque optio ipsam?</p>
+  </div>
+  <script>
+    console.log(document.getElementById("animateButton"));
+    document.getElementById("animateButton").addEventListener("click", function(event) {
+        console.log(1);
+    event.preventDefault();
+    document.querySelector(".content").classList.toggle("animate");
+    });
+
+  </script>
+</body>
+</html>
