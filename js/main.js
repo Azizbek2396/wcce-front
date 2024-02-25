@@ -1,6 +1,16 @@
+if($(location). prop('href') !== $(location).attr("origin")){
+  $(".main").css('transform', 'translateY(0)')
+}
+
 $( document ).ready(function() {
+  if (history.scrollRestoration) {
+      history.scrollRestoration = 'manual';
+  } else {
+      window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+      }
+  }
   var ratio = $(window).width() / $(window).height();
-  // console.log($(window).width(), $(window).height(), ratio);
   if((ratio > 0.4) && (ratio < 1))
   {
     $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_9x18.mp4')
@@ -46,6 +56,7 @@ $( document ).ready(function() {
     }
 
 
+
     if($( document ).width() < 768)
     {
       $(".right-aside").removeClass("hoverable");
@@ -56,25 +67,22 @@ $( document ).ready(function() {
         }
       });
       $(".right-aside .nav-link").on("click", function(event){
-        // event.preventDefault();
-        if(!$(".main").hasClass("animate")){
-          $(".main").addClass("animate");
-        }
         $(this).addClass("active");
         $(".right-aside").removeClass("menu_opened");
       });
     }
 
-    if($( document ).width() > 768){
-      $(".right-aside .nav-link").on("click", function(event){
-        if(!$(".main").hasClass(localStorage.className)){
-          $(".main").addClass(localStorage.className);
-        }
-      });
-    }
-    $('body').offset().top
-
 });
+
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+
 
 $(".org_body_toggle").on("click", function(){
   var $this = $(this);
@@ -88,12 +96,34 @@ $(".org_body_toggle").on("click", function(){
 
 });
 
-
 $(window).on('load', function () {
-
-  if(!$(".main").hasClass('animate')){
+  if($(location).prop('href') !== $(location).attr("origin")){
     $(".main").addClass('animate');
   }
-  $(window).scrollTop();
 });
-// console.log($( document ).width());
+
+$(".wave_image").each(function(){
+  if($(this).isInViewport()){
+    console.log($(this))
+    setTimeout(function() {
+      $(this).attr('src', '/images/right_wave.svg');
+    }, 2000);
+  } else{
+    // $(this).attr('src', '/images/animations/Line_Separator.gif');
+  }
+});
+
+$(window).on('resize scroll', function() {
+
+  $(".wave_image").each(function(){
+    if($(this).isInViewport()){
+      console.log($(this));
+      setTimeout(function() {
+        console.log('done')
+        $(this).attr('src', '/images/right_wave.svg');
+      }, 2000);
+    } else{
+      // $(this).attr('src', '/images/animations/Line_Separator.gif');
+    }
+  });
+});
