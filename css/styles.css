@@ -77,6 +77,7 @@ body {
       line-height: 1.6;
       overflow-x: hidden;
       color: var(--Black);
+      overscroll-behavior: none;
 }
 
 .wrapper-section
@@ -568,13 +569,10 @@ body {
             letter-spacing: 1.92px;
       }
 
-      .agenda
+      .agenda_body
       {
+            width: 90%;
             height: 100%;
-            background-image: url("/images/vertical_line.svg"), url("/images/vertical_line.svg");
-            background-position: right center, left center;
-            background-repeat: no-repeat;
-            background-size: 7px;
       }
 
       .agenda_status {
@@ -647,9 +645,9 @@ body {
             width: 200px;
       }
       .agenda_status {
-            font-size: 16px;
+            font-size: 22px;
             line-height: 24px;
-            letter-spacing: 1.64px;
+            letter-spacing: 2.64px;
         }
 
         .new_title {
