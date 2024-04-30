@@ -88,7 +88,7 @@ body {
 }
 
 .main{
-      width: 95%;
+      width: calc(100% - 80px);
       min-height: 100vh;
       transition: all 0.5s ease-in-out;
       transform: translateY(100%);
@@ -101,7 +101,7 @@ body {
 
 .main .main-container{
       position: relative;
-      background-image: url("/images/home_page_background_16x9.svg");
+      /* background-image: url("/images/home_page_background_16x9.svg"); */
       background-position: center bottom;
       background-repeat: no-repeat;
       background-size: 100%;
@@ -145,13 +145,40 @@ body {
       right: 0;
       width: 80px;
       min-height: 100vh;
-      box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.15);
       transition: all 0.5s ease;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background: linear-gradient(180deg, #D9D9D9 33.94%, #FFFCB2 99.76%);
       box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.right-aside-home {
+      position: fixed;
+      right: -80px;
+      width: 80px;
+      min-height: 100vh;
+      transition: all 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: none;
+      box-shadow: none;
+      animation-name: example;
+      animation-delay: 11s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode:forwards;
+      animation-fill-mode:forwards;
+}
+
+@keyframes example {
+      from {
+            right: -80px;
+      }
+      to {
+            right: 0;
+            background: linear-gradient(180deg, #D9D9D9 33.94%, #FFFCB2 99.76%);
+            box-shadow: -5px 0px 20px 0px rgba(0, 0, 0, 0.15);
+      }
 }
 
 .right-aside.menu_opened

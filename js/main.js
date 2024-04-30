@@ -1,3 +1,5 @@
+
+
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
   var elementBottom = elementTop + $(this).outerHeight();
@@ -18,50 +20,52 @@ $( document ).ready(function() {
           window.scrollTo(0, 0);
       }
   }
-  var ratio = $(window).width() / $(window).height();
-  if((ratio > 0.4) && (ratio < 1))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_9x18.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_mobile.svg)')
-  }
-  if((ratio >= 1) && (ratio < 1.3))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_5x4.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_5x4.svg)')
-  }
-  if((ratio >= 1.3) && (ratio < 1.4))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_4x3.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_4x3.svg)')
-  }
-  if((ratio >= 1.4) && (ratio < 1.55))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_1440x1024.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_4x3.svg)')
-  }
-  if((ratio >= 1.55) && (ratio < 1.7))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_16x10.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_16x10.svg)')
-  }
-  if((ratio >= 1.7) && (ratio < 1.9))
-  {
-    $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_16x9.mp4')
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_16x9.svg)')
-  }
-  if((ratio >= 2))
-  {
-    $('.main .main-container').css('background-image', 'url(/images/home_page_background_2x1.svg)')
-  }
+  // var ratio = $(window).width() / $(window).height();
+  // if((ratio > 0.4) && (ratio < 1))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_9x18.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_mobile.svg)')
+  // }
+  // if((ratio >= 1) && (ratio < 1.3))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_5x4.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_5x4.svg)')
+  // }
+  // if((ratio >= 1.3) && (ratio < 1.4))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_4x3.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_4x3.svg)')
+  // }
+  // if((ratio >= 1.4) && (ratio < 1.55))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_1440x1024.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_4x3.svg)')
+  // }
+  // if((ratio >= 1.55) && (ratio < 1.7))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_16x10.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_16x10.svg)')
+  // }
+  // if((ratio >= 1.7) && (ratio < 1.9))
+  // {
+  //   $('.animation_container source').attr('src', '/images/animations/videos/WCCE_Teaser_16x9.mp4')
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_16x9.svg)')
+  // }
+  // if((ratio >= 2))
+  // {
+  //   $('.main .main-container').css('background-image', 'url(/images/home_page_background_2x1.svg)')
+  // }
 
-    if($('.animation_container').hasClass('show'))
-    {
-      setTimeout(function() {
-          $('.animation_container').removeClass("show");
-          $('.animation_container').addClass("hide");
-          $('.animation_container').css('display', 'none')
-        }, 11000);
-    }
+    // if($('.animation_container').hasClass('show'))
+    // {
+    //   setTimeout(function() {
+    //       $('.animation_container').removeClass("show");
+    //       $('.animation_container').addClass("hide");
+    //       $('.animation_container').css('display', 'none')
+    //     }, 11000);
+    // }
+
+
 
     if($( document ).width() < 768)
     {
