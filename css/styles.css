@@ -462,12 +462,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-      .animation_container img {
-            content: url("/images/animations/compressed/WCCE_Teaser_9x19_5.gif");
-      }
-      .main .main-container{
-            background-image: url("/images/home_page_background_mobile.svg");
-      }
+      
       .page_title {
             font-size: 41px;
             line-height: 44px;
