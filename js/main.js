@@ -1,3 +1,11 @@
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
 if($(location). prop('href') !== $(location).attr("origin")){
   $(".main").css('transform', 'translateY(0)')
 }
@@ -55,8 +63,6 @@ $( document ).ready(function() {
         }, 11000);
     }
 
-
-
     if($( document ).width() < 768)
     {
       $(".right-aside").removeClass("hoverable");
@@ -72,17 +78,20 @@ $( document ).ready(function() {
       });
     }
 
+    // setTimeout(function() {
+    //   $(".wave_image").attr('src', '/images/right_wave.svg');
+    // }, 1700);
+
+    $(".wave_image").each(function(){
+      console.log($(this).isInViewport());
+      if($(this).isInViewport()){
+      setTimeout(function() {
+        $(this).attr('src', '/images/right_wave.svg');
+      }, 1700);
+    }
+  });
+
 });
-
-$.fn.isInViewport = function() {
-  var elementTop = $(this).offset().top;
-  var elementBottom = elementTop + $(this).outerHeight();
-  var viewportTop = $(window).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
-  return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-
-
 
 $(".org_body_toggle").on("click", function(){
   var $this = $(this);
@@ -100,30 +109,19 @@ $(window).on('load', function () {
   if($(location).prop('href') !== $(location).attr("origin")){
     $(".main").addClass('animate');
   }
-});
 
-$(".wave_image").each(function(){
-  if($(this).isInViewport()){
-    console.log($(this))
-    setTimeout(function() {
-      $(this).attr('src', '/images/right_wave.svg');
-    }, 2000);
-  } else{
-    // $(this).attr('src', '/images/animations/Line_Separator.gif');
-  }
 });
 
 $(window).on('resize scroll', function() {
-
   $(".wave_image").each(function(){
+    console.log($(this).isInViewport());
     if($(this).isInViewport()){
-      console.log($(this));
       setTimeout(function() {
-        console.log('done')
+        console.log($(this).attr('src'))
         $(this).attr('src', '/images/right_wave.svg');
-      }, 2000);
+      }, 1700);
     } else{
-      // $(this).attr('src', '/images/animations/Line_Separator.gif');
+      $(this).attr('src', '/images/animations/Line_Separator.gif');
     }
   });
 });
